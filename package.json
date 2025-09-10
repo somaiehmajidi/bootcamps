@@ -1,0 +1,19 @@
+{
+  "name": "bootcamp",
+  "version": "1.0.0",
+  "description": "Bootcamps management project",
+  "main": "server.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production & node server",
+    "dev": "nodemon server"
+  },
+  "author": "Somi Majidi",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
