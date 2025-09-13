@@ -1,6 +1,7 @@
 const express = require('express')
 const dotenv = require('dotenv')
 const logger = require('./middleware/logger')
+const errorHandler = require('./middleware/error')
 const connectDB = require('./config/db')
 const colors = require('colors')
 
@@ -24,6 +25,8 @@ app.use(logger)
 
 // Mount routers
 app.use('/api/v1/bootcamps', bootcamps)
+
+app.use(errorHandler)
 
 // app.get('/', (req, res) => {
     // res.send('<h1>Hello form express!</h1>')
